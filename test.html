@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zap Extension Test Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    .test-section {
+      margin: 30px 0;
+      padding: 20px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+    }
+    .test-section h2 {
+      margin-top: 0;
+      color: #333;
+    }
+    .zappable {
+      padding: 10px;
+      margin: 10px 0;
+      background: #f0f0f0;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .zappable:hover {
+      background: #e0e0e0;
+    }
+    .instructions {
+      background: #e3f2fd;
+      padding: 15px;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Zap Extension Test Page</h1>
+  
+  <div class="instructions">
+    <h3>Instructions:</h3>
+    <p><strong>To test the extension:</strong></p>
+    <ol>
+      <li>Install the extension in Chrome (chrome://extensions/ → Load unpacked)</li>
+      <li>Hold <strong>Ctrl</strong> (Windows/Linux) or <strong>Cmd</strong> (Mac) and click any element below to zap it</li>
+      <li>Or right-click and select "Zap this element" from the context menu</li>
+      <li>Reload the page - zapped elements should remain hidden!</li>
+    </ol>
+  </div>
+
+  <div class="test-section">
+    <h2>Section 1: Headings</h2>
+    <div class="zappable">
+      <h3>This is a heading you can zap</h3>
+    </div>
+    <div class="zappable">
+      <h3>Another zap-able heading</h3>
+    </div>
+  </div>
+
+  <div class="test-section">
+    <h2>Section 2: Paragraphs</h2>
+    <div class="zappable">
+      <p>This is a paragraph that can be zapped. Try Ctrl+Click or Cmd+Click on it!</p>
+    </div>
+    <div class="zappable">
+      <p>Another paragraph for testing. Zap this one too!</p>
+    </div>
+  </div>
+
+  <div class="test-section">
+    <h2>Section 3: Buttons</h2>
+    <div class="zappable">
+      <button>Clickable Button 1</button>
+    </div>
+    <div class="zappable">
+      <button>Clickable Button 2</button>
+    </div>
+  </div>
+
+  <div class="test-section">
+    <h2>Section 4: Lists</h2>
+    <div class="zappable">
+      <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="test-section">
+    <h2>Section 5: Images</h2>
+    <div class="zappable">
+      <div style="width: 200px; height: 100px; background: linear-gradient(45deg, #667eea 0%, #764ba2 100%); border-radius: 4px; display: flex; align-items: center; justify-content: center; color: white;">
+        Placeholder Image
+      </div>
+    </div>
+  </div>
+
+  <div class="test-section">
+    <h2>Section 6: Mixed Content</h2>
+    <div class="zappable">
+      <h4>Mixed Content Block</h4>
+      <p>This block contains multiple elements. Zap the whole block!</p>
+      <span>Some inline text</span>
+    </div>
+  </div>
+
+  <script>
+    // Simulate extension behavior for testing (without Chrome APIs)
+    // This is just for demonstration - the real extension uses chrome.storage
+    console.log('Test page loaded. Install the extension to test full functionality.');
+  </script>
+</body>
+</html>
+
